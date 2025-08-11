@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+    </head>
+    <body>
+        <h1>Student Form</h1>
+        <form method="get">
+            <dl>
+                <dt>User Name:</dt>
+                <dd>
+                    <input type="text" name="Nmae">
+                </dd>
+                
+                <dt>Password</dt>
+                <dd>
+                    <input type="password" name="Pass">
+                </dd>
+
+                <dt>Age</dt>
+                <dd>
+                    <input type="number" name="Age" min="10" max="40" step="5" value="15">
+                </dd>
+
+                <dt>Price</dt>
+                <dd>
+                    <input type="range" name="Price" min="2500" max="5000">
+                </dd>
+
+                <dt>Date</dt>
+                <dd>
+                    <input type="date" name="Date" min="2025-08-11" max="2025-08-25">
+                </dd>
+
+                <dt>Email</dt>
+                <dd>
+                    <input type="email" name="Email" >
+                </dd>
+
+                <dt> Website</dt>
+                <dd>
+                    <input type="url" name="URL" >
+                </dd>
+
+                <dt>Document</dt>
+                <dd>
+                    <input type="file" name="Document" multiple>
+                </dd>
+            </dl>
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
