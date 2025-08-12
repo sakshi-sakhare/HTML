@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+    </head>
+    <style>
+        ul{
+            list-style: none;
+            border: 2px solid;
+            padding: 5px;
+            height: 100px;
+            width: 180px;
+            overflow: auto;
+        }
+    </style>
+    <body>
+        <h1>Students Registration</h1>
+        <form method="get">
+            
+            <dl>
+                <dt>File</dt>
+                <dd>
+                    <input type="file" name="file" multiple accept=".png">
+                </dd>
+
+                <dt>color</dt>
+                <dd>
+                    <input type="color" name="color" value="#540859">
+                </dd>
+
+                <dt>Radio <br>(Gender)</dt>
+                <dd>
+                    <input type="radio" name="radio" value="Male">Male
+                    <input type="radio" name="radio" value="Female">Female
+                </dd>
+
+                <dt>Subject</dt>
+                <dd>
+                    <input type="radio" name="OE" value="Marathi">Marathi
+                    <input type="radio" name="OE" value="Hindi">Hindi
+                    <input type="radio" name="OE" value="Economic">Economic
+                    <input type="radio"  name="OE" value="Other">Other
+                </dd>
+
+                <dt>Checkbox</dt>
+                <dd>
+                    <input type="checkbox" name="box" value="C language"> C language
+                    <input type="checkbox" name="box" value="java language">Java language
+                    <input type="checkbox" name="box" value="Python language">R language
+                    <input type="checkbox" name="box" value="cpp language">Php language
+                </dd>
+
+            </dl>
+            <dl>
+                <dt>Select Courses</dt> 
+                <dd>
+                    <ul>
+                        <li><input type="checkbox" name="Courses" value="c language"> c language</li>
+                        <li><input type="checkbox" name="Courses" value="c++ language"> c++ language</li>
+                        <li><input type="checkbox" name="Courses" value="Data Science"> Data Science</li>
+                        <li><input type="checkbox" name="Courses" value="Data Analyst"> Data Analyst</li>
+                        <li><input type="checkbox" name="Courses" value="Machine Learning"> Machine Learning</li>
+                        <li><input type="checkbox" name="Courses" value="Cyber Security"> Cyber Security</li>
+                        <li><input type="checkbox" name="Courses" value="Ethical Hacking"> Ethical Hacking</li>
+                        <li><input type="checkbox" name="Courses" value="Java Script"> Java Script</li>
+                        <li><input type="checkbox" name="Courses" value="Python language">Python language</li>
+                        <li><input type="checkbox" name="Courses" value=" Java language"> Java language </li
+                    </ul>
+                </dd>
+            </dl>
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
