@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Regular Expression</title>
+</head>
+
+<body>
+    <form>
+
+        Number:<input type="text" name="Number" pattern="\d{10}">
+        <button>submit</button>
+        <br>
+        <br>
+        Date: <input type="text" name="Date" pattern="\d{2}-\d{2}-\d{4}">
+        <button>Submit</button>
+        <br><br>
+        <!-- condition 1 = Name only uppercase letters: -->
+
+        Name: <input type="text" name="letters" pattern="[A-Z]{4-10}">
+        <button>submit</button>
+        <!-- condition 2= Password alpha Numeric with underscore And special chars. range 4 to 10 -->
+        <br><br>
+        Password:<input type="password" name="Password" pattern="[\w@#%$]{4,10}">
+        <button>submit</button>
+        <br><br>
+        <!-- condition 3= Bank IFSC code -->
+        IFSC Code:<input type="text" name="code" pattern="SBI\d{4}[A-Z]{2}">
+        <button>Submit</button><br><br>
+        <!-- condition 4= 10 digits Number starting with +91 -->
+        Phone:<input type="text" name="Number" pattern="\+91\d{10}">
+        <button>Submit</button>
+
+    </form>
+
+</body>
+
+</html>
