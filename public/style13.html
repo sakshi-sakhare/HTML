@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>style</title>
+        <style>
+            #terms:checked+span
+            {
+                color: green;
+            }
+            #terms+span{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Term AND Conditions</legend>
+            <h2>Terms of Class</h2>
+            <input type="checkbox"  id="terms">
+            <span>I Accept</span>
+        </fieldset>
+    </body>
+</html>
