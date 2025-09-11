@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>style</title>
+    <style>
+        #User:required {
+            border: 2px solid red;
+            box-shadow: 2px 4px 5px red;
+        }
+        #User+span{
+            display: none;
+        }
+        #User:required+span{
+            display: inline;
+        }
+        #User:valid+span{
+            display: inline;
+        }
+        #user:optional
+        {
+            border: 2px solid lime;
+            box-shadow: 2px 4px 5px lime;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- EX:-   required and optional -->
+    <h2>Register User</h2>
+    <dl>
+        <dt>Users Name</dt>
+        <dd>
+            <input type="text" id="User" required>
+            <span>It is Required</span>
+        </dd>
+    </dl>
+</body>
+
+</html>

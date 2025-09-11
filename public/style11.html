@@ -11,6 +11,12 @@
         button:enabled {
             background-color: black;
             color: white;
+            cursor: grab;
+        }
+        button:disabled{
+            background-color: black;
+            color: white;
+            cursor: not-allowed;
         }
     </style>
 </head>
@@ -23,7 +29,7 @@
             <input type="text" name="Username" id="User" value="EPL" readonly>
         </dd>
     </dl>
-    <button>Submit</button>
+    <button disabled>Submit</button>
 </body>
 
 </html>
