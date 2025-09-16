@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pseudo Classes</title>
+        <style>
+tbody tr:nth-child(odd)
+{
+    background-color:purple;
+}
+tbody tr:nth-child(even)
+{
+    background-color:pink;
+}
+thead tr
+{
+    background-color: yellow;
+}
+td:empty
+{
+    background-color: gray;
+}
+:root{
+    font-family: Impact;
+}
+        </style>
+    </head>
+    <body>
+        <table border="1" width="400">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Phone</td>
+                    <td>&#8377;45000</td>
+                </tr>
+                <tr>
+                    <td>TV</td>
+                    <td>&#8377;35000</td>
+                </tr>
+                <tr>
+                    <td>Fan</td>
+                    <td>&#8377;5000</td>
+                </tr>
+                <tr>
+                    <td>Glass</td>
+                    <td>&#8377;4000</td>
+                </tr>
+                <tr>
+                    <td>Laptop</td>
+                    <td>&#8377;85000</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

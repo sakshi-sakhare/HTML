@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pseudo Classes</title>
+        <style>
+            p{
+                text-align: justify;
+            }
+            p::first-letter
+            {
+                color: brown;
+                font-size: 45px;
+            }
+            p::first-line
+            {
+                color: aqua;
+            }
+            p::selection
+            {
+                color: yellowgreen;
+            }
+            #User::placeholder
+            {
+                color: gold;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Name:
+            <input type="text" id="User" placeholder="Enter a Name">
+        </div>
+        <p>
+            A paragraph is a unit of writing consisting of several sentences that develop a single idea or topic, acting as a structural division in prose to help organize thoughts and make text easier to read. Paragraphs typically begin with a topic sentence that states the main idea, followed by supporting sentences with details or examples, and can end with a concluding sentence that summarizes or bridges to the next paragraph
+        </p>
+    </body>
+</html>
