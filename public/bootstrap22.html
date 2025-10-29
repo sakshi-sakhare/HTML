@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    </head>
+    <body>
+     <div class="container-fluid">
+      <div>
+          <h3>Register User</h3>
+          <div class="mb-2">
+             <lable class="form-label" for="UserName">User Name</lable>
+             <div>
+                <input type="text" name="UserName" class="form-control">
+             </div>
+          </div>
+          <div class="mb-2">
+             <label class="form-label" for="Password">Password</label>
+             <div>
+                <input type="password" Name="Password" class="form-control">
+             </div>
+          </div>
+          <div class="mb-2">
+                <label class="form-label" for="City">Choose City</label>
+                <div>
+                    <select name="City">
+                        <option>Select a City</option>
+                        <option>Pune</option>
+                        <option>Mumbai</option>
+                        <option>Delhi</option>
+                    </select>
+                </div>
+          </div>
+          <div class="mb-2">
+                <label class="form-label" for="Control">Are you agree</label>
+                <div class="form-switch">
+                    <input type="checkbox" name="Control" class="form-check-input">
+                    <label>Yes</label>
+                </div>
+          </div>
+          <div class="mb-2">
+                <label for="Age" class="form-label">Select Age</label>
+                <div>
+                    <input type="range" name="Age" class="form-range">
+                </div>
+          </div>
+          <div class="mb-2">
+            <button class="btn btn-primary w-100">Register</button>
+          </div>
+      </div>
+    </div>
