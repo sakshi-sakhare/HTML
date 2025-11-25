@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <script>
+            function BodyLoad(){
+              let result = document.getElementsByClassName("check-input");
+                alert("Total input Class :"+ result.length);
+            }
+        </script>
+    </head>
+    <body onload="BodyLoad()">
+        <fieldset>
+            <legend>Payments Methods</legend>
+            <input type="ratio" class="check-input" name="pay">Credit Card
+            <input type="ratio" class="check-input" name="pay">UPI
+            <input type="ratio" class="check-input" name="pay">Debit Card
+            <input type="ratio" name="pay">Cash
+        </fieldset>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript</title>
+    <script>
+        function submit() {
+            var user = prompt("Enter a Name");
+            var age = document.getElementById("lstage").value;
+            var msg = "Hello!" + " " + user + " " + "Your age is" + " " + (parseInt(age) + 2) + " " + "this year.<br>";
+            var msg1 = `Hello ! ${user} Your age is ${parseInt(age)+2}this year. `;
+            document.write(msg);
+            document.write(msg1);
+        }
+    </script>
+</head>
+
+<body>
+    <dl>
+        <dt>Select Age</dt>
+        <dd>
+            <select id="lstage">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="45">45</option>
+                <option value="50">50</option>
+            </select>
+        </dd>
+    </dl>
+    <button onclick="submit()">Submit</button>
+</body>
+
+</html>

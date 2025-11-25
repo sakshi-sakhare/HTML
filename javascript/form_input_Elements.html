@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script>
+        function submit(){
+            document.getElementById("detailsContainer").style.display="block";
+            document.getElementById("registerContainer").style.display="none";
+            document.getElementById("lblName").innerHTML=document.getElementById("txtName").value;
+            document.getElementById("lblPrice").innerHTML=document.getElementById("txtPrice").value;
+            document.getElementById("lblCity").innerHTML=document.getElementById("lastCities").value;
+            stock="";
+            stockCheckBox=document.getElementById("optStock");
+            if(stockCheckBox.checked){
+                stock="Availabke";
+            }
+            else{
+                stock="Out of Stock";
+            }
+            document.getElementById("lblStock").innerHTML=stock;
+        }
+        
+    </script>
+</head>
+
+<body class="container-fluid">
+    <h3>Register Product</h3>
+    <button class=" btn btn-primary" data-bs-target="#registerproduct" data-bs-toggle="modal">Register</button>
+
+
+    <div class="modal fade" id="registerproduct">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Register New Products</h3>
+                    <button class="btn btn-close" data-bs-dismiss="modal"></button>
+
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt>Name</dt>
+                        <dd><input type="text" id="txtName" class="form-control"></dd>
+                        <dt>Price</dt>
+                        <dd><input type="text" id="txtPrice" class="form-control"></dd>
+                        <dt>Shipped</dt>
+                        <dd>
+                            <select id="lstcities" class="form-select">
+                                <option> Pune</option>
+                                <option>Shevgaon</option>
+                                <option>Nagar</option>
+                            </select>
+                        </dd>
+                        <dt>Stock</dt>
+                        <dd class="form-switch">
+                            <input type="checkbox" id="optStock" class="form-check-input">
+                        </dd>
+                    </dl>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" onclick="submit()" data-bs-dismiss="modal">Submit</button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Cancle</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div id="detailsContainer" style="display: none;">
+        <h3>Product Details</h3>
+        <dl class="row">
+            <dt class="col-3">Name</dt>
+            <dd class="col9" id="lblName"></dd>
+            <dt class="col-3">Price</dt>
+            <dd class="col-9" id="lblPrice"></dd>
+            <dt class="col-3">Shipped</dt>
+            <dd class="clo-9" id="lblCity"></dd>
+            <dt class="col-3">Stock</dt>
+            <dd class="col-9" id="lblStock"></dd>
+        </dl>
+        <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#registerproduct">Edit</button>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

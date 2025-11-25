@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript</title>
+    <script>
+        function BodyLoad(){
+            document.querySelector("#pic").src="../public/assets/nature1.png";
+            document.querySelector(".btn-reg").value="Register";
+            document.querySelector(".btn-log").value="login"
+        }
+    </script>
+</head>
+
+<body onload="BodyLoad()">
+    <img height="250 " id="pic" name="IMG" width="250" border="1">
+    <div>
+        <form name="Fregister">
+            <h3>Register</h3>
+            Register:
+            <input type="text" name="Tname">
+            <input type="button" name="Rbutton" id="EPL" class="btn-reg">
+
+        </form>
+    </div>
+
+    <div>
+        <form name="Flogin">
+            <div>
+                <h3>Login</h3>
+                Login:
+                <input type="email" name="ename">
+                <input type="button" name="Lbutton" id="Text" class="btn-log">
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

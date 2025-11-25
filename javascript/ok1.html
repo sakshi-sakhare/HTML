@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function onclick1() {
+            document.getElementById("btn").value = "Delete";
+            // document.querySelector("h1").innerHTML = "this contant will be deleted from the page ";
+        }
+        function Delete() {
+            alert("you have remove the deta into the db :");
+            document.querySelector("h1").innerHTML = "";
+        }
+    </script>
+</head>
+
+<body onload="onclick1()">
+   
+    <h1>this contant will be deleted from the page </h1>
+    <input type="button" id="btn" onclick="Delete()">
+</body>
+
+</html>

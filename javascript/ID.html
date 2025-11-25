@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript</title>
+    <script>
+        function BodyLoad() {
+            document.getElementById("pic").src = "../public/assets/nature.jpg";
+            document.getElementById("EPL").value = "Register";
+            document.getElementById("Test").value = "Login";
+        }
+    </script>
+</head>
+
+<body onload="BodyLoad()">
+    <img id="pic" name="IMG" height="250" width="250" border="1">
+    <div>
+        <form name="Fregister">
+            <h3>Register</h3>
+            Register:
+            <input type="text" name="Tname">
+            <input type="button" name="Rbutton" id="EPL">
+        </form>
+    </div>
+    <div>
+        <form class="Flogin">
+            <h3>Login</h3>
+            Login:
+            <input type="email" name="Ename">
+            <input type="button" name="Lbutton" id="Test">
+
+        </form>
+    </div>
+
+</body>
+
+</html>

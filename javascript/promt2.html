@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <script>
+            function Create(){
+                pdf=prompt("Enter PDF Name","New_PDF");
+                if(pdf==null){
+                    document.write("You Canceled...");
+                }
+                else if(pdf==""){
+                    document.write("Plz Enter PDF Name...")
+                }
+                else{
+                    document.querySelector("p").innerHTML="PDF Created :"+pdf;
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="Create()">Create A PDF</button>
+        <p></p>
+        
+    </body>
+</html>
