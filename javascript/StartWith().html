@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>startWith</title>
+    <script>
+        function verify()
+        {
+            
+                var phoneNumber = document.getElementById("txtPhone").value;
+                var phoneImg = document.getElementById("phoneImg");
+                if(phoneNumber.startsWith("4545"))
+                {
+                    phoneImg.src = "../public/assets/";
+                }
+                else if(phoneNumber.startsWith("1234"))
+                {
+                    phoneImg.src = "../public/assets/Google.png";
+                }
+                else
+                {
+                    phoneImg.src = "";
+                    phoneImg.alt = "NA";
+                }
+        }
+    </script>
+</head>
+
+<body class="container-fluid">
+    <fieldset>
+        <legend>Your Phone Number</legend>
+        <div class="input-group">
+            <input type="text" id="txtPhone" onkeyup="Verify()" class="form-control">
+            <img class="input-group-text"  id="phoneImg"  class="img-fluid" width="100" height="50">
+        </div>
+    </fieldset>
+
+</body>
+
+</html>

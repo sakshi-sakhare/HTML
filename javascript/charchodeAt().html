@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>String</title>
+    <script>
+        function verify() {
+            var user = document.getElementById("txtName").value;
+            if (user.charCodeAt(0) >= 65 && user.charCodeAt(0) <= 90) {
+                document.querySelector("p").innerHTML = "verify".fontcolor('green');
+            }
+            else {
+                document.querySelector("p").innerHTML = "plz Name start with Uppercase".fontcolor('red');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Tēst</legend>
+        <div>
+            <input type="text" id="txtName" size="45" placeholder="Name start with Uppercase" onkeyup="verify()">
+            <p></p>
+        </div>
+    </fieldset>
+</body>
+
+</html>

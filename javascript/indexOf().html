@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>indexOf()</title>
+        <script>
+            function verify()
+            {
+                var email= document.getElementById("txtEmail").value;
+                var msg=document.querySelector("h3");
+                var position=email.indexOf("@");
+                if(position<3)
+            {
+                msg.innerHTML="Invalid Email"
+            }
+            else
+            {
+                msg.innerHTML="varify Email"
+            }
+            }
+        </script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Email</legend>
+            <input type="email" id="txtEmail">
+            <button onclick="verify()">Submit</button>
+        </fieldset>
+        <h3></h3>
+    </body>
+</html>
