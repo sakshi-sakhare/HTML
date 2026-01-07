@@ -1,0 +1,40 @@
+ <script>
+    let products = {
+        "Name":" ",
+        "Price":0,
+        "Stock":false,
+        "Qty":0,
+        "Cities":[],
+        "Rating":{Rate:0,Count:0},
+        "Total":function(){
+            return this.Qty* this.Price;
+
+        },
+        "Print":function(){
+            document.write(`Name=${this.Name}<br>Price=${this.Price}<br>Stock=${this.Stock}<br>
+            Quantity=${this.Qty}<br>Total${this.Total()}<br>Shipped TI=${this.Cities.toString()}<br>
+            Rating=${this.Rating.Rate}<br> Rating From=${this.Rating.Count}People.<br>`);
+        }
+
+    }
+    document.write(`<h2>Car Details</h2>`);
+    products.Name="BMW M5";
+    products.Price=21000000.45;
+    products.Qty=3;
+    products.Stock=true;
+    products.Rating.Rate=2;
+    products.Cities=["Nashik","Beed"];
+    products.Print();
+
+    document.write(`<h2>Bike Details</h2>`);
+    products.Name="Bullet";
+    products.Price=200000.45;
+    products.Qty=5;
+    products.Stock=true;
+    products.Rating.Rate=15;
+    products.Rating.Count=300;
+    products.Cities=["A.nagar","Banglore"];
+    products.Print();
+    
+</script>
+    

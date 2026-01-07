@@ -1,0 +1,22 @@
+<script>
+    function fun() {
+        var no = 2;
+        switch (no) {
+            case (no >= 1 && no <= 10):
+                switch (no) {
+                    case 1:
+                        document.write("one");
+                        break;
+                    case 2:
+                        document.write("Two");
+                        break;
+                    default:
+                        document.write(`Your no ${no} is  between 1 to 10`);
+                }
+             break;
+            default:
+                document.write("Plz  enter 1 to 10 number.");
+        }
+        fun();
+    }
+</script>

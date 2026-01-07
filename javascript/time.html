@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Time Interval</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <style>
+        #container {
+            display: flex;
+            justify-content: space-between;
+            font-size: 30px;
+            background-color: rgb(77, 10, 77);
+            color: whitesmoke;
+            padding: 5px;
+        }
+    </style>
+    <script>
+        function Clock() {
+            var cTime = new Date();
+            document.getElementById("time").innerHTML = cTime.toLocaleTimeString();
+        }
+        function bodyload() {
+            setInterval(Clock, 1000);
+            var now = new Date();
+            var icon = document.getElementById("icon");
+            var msg = document.getElementById("msg");
+            var hrs = now.getHours();
+            if (hrs >= 0 && hrs <= 12) {
+                msg.innerHTML = "Good Morning";
+                icon.className = "bi bi-brightness-alt-high-fill";
+            }
+            else if (hrs >= 13 && hrs <= 18) {
+                msg.innerHTML = "Good Afternoon";
+                icon.className = "bi bi-brightness-high-fill";
+
+            }
+            else {
+                msg.innerHTML = "Good Evening";
+                icon.className = "bi bi-sunset-fill";
+            }
+        }
+
+
+    </script>
+
+</head>
+
+<body onload="bodyload()">
+    <div id="container">
+        <span>EPL Class</span>
+        <span>
+            <span id="icon"></span>
+            <span id="msg"></span>
+        </span>
+        <span id="time"></span>
+
+    </div>
+
+
+</body>
+
+</html>

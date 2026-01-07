@@ -1,0 +1,13 @@
+<script>
+    var mfd=new Date();
+    let month=["Jan","Feb","Mar","April","May","Jun","July","Aug","Sep","Oct","Nov","Dec"];
+    let wDays=["Sun","Mon","Tue","wed","Thu","Fri","Sat"]
+     document.write(
+        `Manufactured Date : ${mfd.getDate()}<br>
+        Manufactured Month :${mfd.getMonth()}<br>
+        Manufactured weekDay :${mfd.getDay()}<br>
+        Manufacuted Year :${mfd.getFullYear()}<br>
+        Manufacuted Total Date :${wDays[mfd.getDay()]}-${mfd.getDate()}-${month[mfd.getMonth()]}
+         ${mfd.getFullYear()}`
+    );
+</script>

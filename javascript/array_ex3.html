@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array Manipulation</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+        <script>
+            var cities = ["Pune","Mumbai","Delhi"];
+            function loadCities(){
+                document.getElementById("lstCategory").innerHTML = "";
+                for(var city of cities){
+                    var option = document.createElement("option");
+                    option.text = city;
+                    document.getElementById("lstCategory").appendChild(option);
+                }
+            }
+            function bodyload(){
+                loadCities();
+            }
+            function btnClick(){
+                var cityName = document.getElementById("txtCity").value;
+                cities.push(cityName);
+                alert(`${cityName} Added to list.`);
+                loadCities();
+                document.getElementById("txtCity").value =" ";
+            }
+        </script>
+    </head>
+    <body class="container-fluid" onload="bodyload()">
+        <h3>Array Manipulation</h3>
+        <div class="row">
+            <div class="col-3">
+                <fieldset>
+                    <legend>Add New City</legend>
+                    <div class="input-group">
+                        <input type="text" id="txtCity" class="form-control">
+                        <button onclick="btnClick()" class="btn btn-primary">Add</button>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="col-9">
+                <h3>Cities List</h3>
+                <select class="form-select" id="lstCategory">
+
+                </select>
+            </div>
+        </div>
+    </body>
+</html>

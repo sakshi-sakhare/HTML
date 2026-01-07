@@ -1,0 +1,30 @@
+<script>
+    function fun() {
+        var choice = "nO";
+        switch (choice) {
+            case "YES":
+            case "yes":
+            case "Yes":
+            case "YEs":
+            case "yES":
+            case "yEs":
+                document.write("Yes");
+                break;
+            case "NO":
+            case "no":
+            case "No":
+            case "nO":
+                document.write("NO");
+                break;
+            case "WRONG":
+            case "wrong":
+                document.write("Wrong");
+                break;
+
+            default:
+                document.write("plz enter Yes OR No OR Wrong.");
+                break;
+        }
+    }
+    fun();
+</script>

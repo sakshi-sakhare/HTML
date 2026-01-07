@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Time Interval</title>
+    <style>
+        #container {
+            display: flex;
+            justify-content: space-between;
+            font-size: 30px;
+            background-color: rgb(71, 4, 71);
+            color: whitesmoke;
+            padding: 5px;
+        }
+    </style>
+    <script>
+        function clock() {
+            var cDate = new Date();
+            document.getElementById("time").innerHTML = cDate.toLocaleTimeString();
+        }
+        function bodyload() {
+            setInterval(clock, 1000);
+        }
+    </script>
+</head>
+
+<body onload="bodyload()">
+    <div id="container">
+        <span>Epl Class</span>
+        <span id="time"></span>
+
+    </div>
+</body>
+
+</html>

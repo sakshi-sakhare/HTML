@@ -1,0 +1,14 @@
+<script>
+    var data=new Map();
+
+    data.set("Car","Rolls Royce");
+    data.set(1,"Rohit");
+    data.set (789,"TCS");
+    data.clear();
+    data.delete(789);
+    for(var info of data.entries())
+{
+    document.write(info+"<br>");
+}
+document.write("Total values of keys="+ data.size);
+</script>

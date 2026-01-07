@@ -1,0 +1,23 @@
+<script>
+    try{
+        var a=10;
+    var b=0;
+    var c=a/b;
+    if(b==0)
+    {
+        throw "DivisionError: Can't divide by 0. <br>";
+    }
+    if(b<0)
+    {
+        throw "NonNagetive :You can't divide by -ve value. <br>";
+    }
+    }
+    catch(expDetails)
+    {
+    document.write(expDetails);
+    }
+    finally
+    {
+         document.write(`Division=${c}`);
+    }
+</script>
