@@ -1,0 +1,13 @@
+function user(userid,password,success,fail)
+{
+ if(userid===45&&password==="EPL@12")
+ {
+    success();
+ }
+ else
+ {
+    fail();
+ }
+
+}
+user(45,"EPL@12",function(){document.writeln("Login Successfully.")},function(){document.writeln("Invaild information.")});

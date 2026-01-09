@@ -1,0 +1,18 @@
+<script>
+
+    function user(...loginDetails)
+{
+    const[userid,password,success,fail]=loginDetails
+ if(userid===45&&password==="EPL@12")
+ {
+    success();
+ }
+ else
+ {
+    fail();
+ }
+
+}
+user("<h3> Rest Parameter</h3>",45,"EPL@12",function(){document.writeln("Login Successfully.")},function(){document.writeln("Invaild information.")});
+
+</script>
